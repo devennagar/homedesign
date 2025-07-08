@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Project - Admin Panel</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Add Project</h2>
+    <form action="/api/admin/add-project" method="POST" enctype="multipart/form-data">
+      <label for="image">Project Image:</label>
+      <input type="file" id="image" name="image" required>
+
+      <label for="name">Project Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter project name" required>
+
+      <label for="description">Project Description:</label>
+      <textarea id="description" name="description" rows="4" placeholder="Enter project description" required></textarea>
+
+      <button type="submit">Submit Project</button>
+    </form>
+  </div>
+   <script src="../script.js"></script>
+</body>
+</html>
